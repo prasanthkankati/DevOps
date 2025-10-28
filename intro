@@ -1,0 +1,40 @@
+Def-1: Enhanced communication from togethring the Business and developand temas in azile with quick feedback from business on the product by automating every phase from planing to deployment.
+
+Def:2: Devops is the culture that organizatios deliver their applications. Delivering is the end goal of any organisation.
+
+Def:3: Devops is a process of automating the delivery by ensuring the quality of an app by doing continous montoring, observability and testing.
+
+
+why delivering an app quickly takes much role in software:
+
+recently microsoft got the crash on it's windows OS. To fix this users were asked to update their software to fi that. In days it is resolved.
+
+So any critical bugs, security leaks, Major issues are in the software or in any product this is good practice if we can deliver the app with in minutes, hours, days even.. not longer time.
+
+
+Why DevOps:
+
+Beofre 10 years the process of delivery is manual from mobving the build to dev laptop to the app server.
+
+there are minimum of 3 roles involved in this manual process.
+1. System admin to spin up the staging and production servers.
+2. Build and release engineers to release the build on to the servers.
+3. Server admin- to manage the servers.
+
+This all the process consumes the much time and the delovery will be automatically compramised.
+
+Now to avoid this manual and physical roles devops came into picture for effecient delivery.
+
+The devops engg main goal is deliver the product effeciently with minimum time and with quality to the end user from developer.
+So if there is any tool or process which do the same work in very effiencent or quick time then obviously we should upgrade our self to be on the same page.
+
+
+
+Inroduce your self:
+
+This is prasanth. working as a devops engineer for the past 3 years. Before that i worked as a performance tester and i worked in the background of server
+monotoring and observability to identify and fix the common bottlenecks. 
+
+Now as a devops eng.. i am automating the the delivery process by keeping the quality and contionus monotoring and testing in mind.
+
+
