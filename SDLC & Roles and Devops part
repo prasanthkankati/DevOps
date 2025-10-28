@@ -1,0 +1,73 @@
+SDLC is a standard procedure in IT industry to Design > Develop > Test to deliver a high quality product to the end user.
+Phases
+
+Planning > Defining > Designing (HLD & LLD) > Building > Testing > Deployment 
+
+Planning : idea
+
+if example.com is an ecommerse app that only have men and women clothing so CTO or product owner collected some metrics and anlaysis on their
+users and finally planning to add kids clothing into thier online business.
+
+Defining: (Requirements & gathering): Business needs
+
+BA or Product owner collects all the info whivh age of kids and what are requirements of this business deal and metrics all these will gather and
+put these entire plan on papers like a documentation.
+
+Designing:
+
+HLD:
+
+Archtect will plan high level design like scalabilities, infrastrcture, compatibilities as part od High level design.
+
+LLD:
+
+Developer will develp code in very low level like functions, servers, logics as part of LLD.
+
+Building: Final build 
+
+all the code from dev team pushed to a common code repo and this will be deployed to the Test server.
+
+Testing: 
+
+QA will test the software and promote the results.
+
+Deployment: Maintainane (Deploy & Monitor)
+
+Product deployed to the Prodction server and will go live to end user.
+
+
+
+
+
+GPT++:
+| Phase       | Role             | What they actually do                      |
+| ----------- | ---------------- | ------------------------------------------ |
+| Planning    | Product Owner    | Defines business needs                     |
+| Analysis    | Business Analyst | Converts business to requirements          |
+| Design      | Architect        | Chooses architecture, tools, DB            |
+| Development | Developer        | Writes code                                |
+| Testing     | QA/SDET          | Automates & tests functionality            |
+| Maintenance | DevOps & SRE     | Ensure smooth running, automate everything |
+
+
+| Stage                 | Input           | Output                                   |
+| --------------------- | --------------- | ---------------------------------------- |
+| Build Automation      | Source code     | Build artifacts (.apk, .jar, containers) |
+| Test Automation       | Build artifacts | Test results, Quality gate status        |
+| Deployment Automation | Approved build  | Running app in environment               |
+| Monitoring Automation | Logs, Metrics   | Alerts, dashboards, stability data       |
+
+
+| Area                                | Examples                      | Tools                              |
+| ----------------------------------- | ----------------------------- | ---------------------------------- |
+| CI (Continuous Integration)         | Auto build, auto unit testing | GitHub Actions, Jenkins, GitLab CI |
+| CD (Continuous Delivery/Deployment) | Auto deploy to environments   | ArgoCD, Spinnaker, Azure DevOps    |
+| Environment Provisioning            | Infra setup                   | Terraform, CloudFormation          |
+| Configuration Management            | Server config                 | Ansible, Puppet, Chef              |
+| Monitoring                          | System & app health           | Prometheus, Grafana, Dynatrace     |
+| Security Automation                 | Vulnerability checks          | Snyk, SonarQube                    |
+
+
+
+
+
