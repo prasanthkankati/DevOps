@@ -1,3 +1,5 @@
+vm is nothing but an infrastructure.
+
 on a physical server > if we isolate virtualization then each VM machine has its own cpu own hardware and own memory
 means we can utilize the server hardware in very effecieng way
 for ex if server has 100Gb memory then in ghat if we install only one app of size 5MB. the remaining resources of the physical HP sever got wasted.
@@ -7,3 +9,26 @@ each server has hypervysor istalled on them.
 so when we reqest the hyper vysor to create a VM manually or automation that takes input and provide VM in return.
 so that has IP and keypair to get access virtually.
 gaint comapies doing business with this concept of effeciency of resources only.
+we can create VMs in on premises server and also on a cloud platform.
+cloud platforms:
+
+AWS Ec2
+microsoft azure
+google GCP
+digital ocean
+
+every one has an apis to create VMs and storage and for all the features.
+so as an effecient devop eng you cant keep on create vms manually
+u will avoid manual force and create automation for tbag by calling tbeir apis
+so you can create 100 vms in a single shot
+
+but..
+using AWS api
+that only happens if our API CALL using boto3-phython module script
+is valid- make all sytaxes and coveyed the rquest properly
+authenticated- having their login creds
+authorized - authorized account to utilize services
+
+using AWS-CLI
+using CFT cloud formation templates
+using terraform for cross cloud platform 
