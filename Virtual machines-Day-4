@@ -1,0 +1,9 @@
+on a physical server > if we isolate virtualization then each VM machine has its own cpu own hardware and own memory
+means we can utilize the server hardware in very effecieng way
+for ex if server has 100Gb memory then in ghat if we install only one app of size 5MB. the remaining resources of the physical HP sever got wasted.
+so to fix that ineefeciency problem.
+a big leap has evolved that the datacenters have physical servers installed on racks.
+each server has hypervysor istalled on them.
+so when we reqest the hyper vysor to create a VM manually or automation that takes input and provide VM in return.
+so that has IP and keypair to get access virtually.
+gaint comapies doing business with this concept of effeciency of resources only.
