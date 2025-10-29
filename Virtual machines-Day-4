@@ -1,5 +1,5 @@
 vm is nothing but an infrastructure.
-
+vm is also called as an instance 
 on a physical server > if we isolate virtualization then each VM machine has its own cpu own hardware and own memory
 means we can utilize the server hardware in very effecieng way
 for ex if server has 100Gb memory then in ghat if we install only one app of size 5MB. the remaining resources of the physical HP sever got wasted.
@@ -31,4 +31,38 @@ authorized - authorized account to utilize services
 
 using AWS-CLI
 using CFT cloud formation templates
+AWS CdK- cloud development kit
 using terraform for cross cloud platform 
+
+if an organisation is dealing with single cloud platform then better to stick the specific cloud creation ways.
+if an org has hybrid cloud platform usage for ex aiand ml gco is mostly used so like that way then terrform is the bestway ti create hybrid cloud vms.
+
+
+aws console> launch ec2 instance> ceeate an instance> choose the image and os create VM add keypair
+then it creates
+
+launching can be possible
+
+using aws CLI instances > instances ID> connect> connect will show CLi but thats manual way
+
+from local terminals there are many moderan terminals to access 
+
+download iTerm-2 terminal for mac 
+mobaxterm- we can store up to 10  creds for trail version and up to hundred in paid or putty or nomachine terminals for windows
+
+
+launch terminal> SSH ubuntu@publicIPinstance
+
+for the very fisrst time it will ask for do uou wabtbyo save login info put YES and run
+it will askfor publickey
+so give .pem key or identity key  path 
+chkod 600 pemfile path 
+//to close permisiions and make the key private
+SSH -i /users/hi/downloads/test111.pem ubuntu@publicip
+loggs in
+
+touch pkankati
+ls
+lists out pkankati file that means ur logged in.
+
+
