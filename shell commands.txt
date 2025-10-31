@@ -1,0 +1,120 @@
+shell scripting is the way of communicating to the Linux servers and most of them are do not have GUI like windows.
+GUI adds weight so user interactions should go through CLI. Most of the shell commands across all the OS destributions
+CentOS, RedHat, Federo, Amazon, Ubuntu, debian vendors are same.
+
+command to logon to instance:
+
+ssh -i path/to/the/pem/file/Pandu@123/pem ubuntu@publicIPV4
+
+ater logged in you dont know where really you are as it is Non-GUI so check for your present working directory
+
+pwd 
+
+List the files after connection:
+
+ls
+
+if you want to go to a spwcific directory from one directory:
+
+cd path/to/directory/you/are/in
+
+just come back onestep:
+
+cd ..
+
+
+>path/to/directory/you/are is the PWD
+
+just come back two steps:
+
+cd ../..
+
+>path/to/directory
+
+To list out the files and directory info:
+
+like DRWRWX owner froup size created.
+
+ls -ltr
+
+if starts with D string then thats a directory.
+
+
+
+Creating file:
+
+touch starboy
+
+
+Creating file and write content in it:
+
+vi starboy
+
+ to start editor
+escape to dismiss read or write confusion the write using I
+
+I
+
+inserts the content 
+
+:wq!
+
+
+saves the file.
+
+
+Print the file:
+
+cat starboy
+
+remove file:
+
+rm starboy
+
+
+cretae a directory:
+mkdir star
+
+remove a drectory:
+
+rm -r star
+
+------------------------------------------------------------------
+SYSTEM RESOURCES USAGE
+------------------------------------------------------------------
+
+to check Total Used Free memory:
+
+free
+free -g (for better readability)
+
+
+to check number of processors installed:
+
+nproc
+
+
+storage disk file size details:
+
+df
+df -h
+
+to check manage cpu, memory together info:
+
+top
+htop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
