@@ -66,3 +66,27 @@ ls
 lists out pkankati file that means ur logged in.
 
 
+
+
+we can create instance usung aws console
+aws cli commands-
+install aws cli
+aws configure- enter access key and tgen secret access key
+create access key in aws account
+login then 
+ho to aws cli commands documentation for all the services.
+---
+
+AWS CLOUFIRMATION TEMPLATES BY CREATING STACK
+
+in github awslabs/awacloudformation temolates/
+copy the template and download
+
+aws console-cloudformation-create stack-upload exating template.
+AWS api calls using boto-3 
+
+python module to interact with amazon services.
+
+
+
+
