@@ -1,0 +1,21 @@
+Linux os over Windows:
+
+Most of the OS occupied to host apps is Linux over windows 80-85 percent because it is so secure.
+Linux doesnt even need an Antivirus software like windows.
+The OS is so powerfull, clean, opensource, secure so this is what driving Linux.
+
+OS- Is the mediator between Hardware and software.
+If dell is providing you a laptop that means its making hardware and ontop over that it installing microsoft Windows OS to run your softwares.
+
+OS is the heart of the PC/Server,
+A PC or server needs a Hardware and softwares,
+Hardware is like CPU, Memory, I/O(Disk)
+so if you install OS over hardware your software apps will run by talking to hardware as OS as a mediator.
+
+USer > App {SW}> OS > Hardware and then reverse back to user.
+Device management
+Process management
+Memory managemnt
+Manages system calls I/O
+
+
