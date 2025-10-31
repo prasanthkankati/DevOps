@@ -19,3 +19,14 @@ Memory managemnt
 Manages system calls I/O
 
 
+OS has the below componants:
+
+System Softwares > User process > Compilers > System Libraries > Kernel > OS > Hardware and back to user.
+
+
+
+
+
+
+
+
