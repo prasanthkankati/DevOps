@@ -4,6 +4,12 @@ CentOS, RedHat, Federo, Amazon, Ubuntu, debian vendors are same.
 
 command to logon to instance:
 
+
+man ls
+man touch 
+
+open the manual of the commands available and guide
+
 ssh -i path/to/the/pem/file/Pandu@123/pem ubuntu@publicIPV4
 
 ater logged in you dont know where really you are as it is Non-GUI so check for your present working directory
@@ -103,6 +109,40 @@ to check manage cpu, memory together info:
 
 top
 htop
+
+
+--------
+Editor
+--------
+
+vi-inbuild in any linux platform
+vim- has better editor and not default came with some distibutions.
+do opens the same editor
+
+ls
+red.sh
+vim red.sh opens the red.sh file in editor
+
+
+vim ped.sh
+opens the new ped.sh file in vim
+
+
+always better to use touch over vim in the automation to write a files. cause if we are doing a bulk file creation and writing to them the editors are all
+opened state so it can not close the previous file editer process says like the file is in use kind of so touch directly writes a file and Vim opens editor and writes in side the editor.
+
+--------------
+shell scripting
+-------------
+
+#!/bin/bash
+
+
+in bin there are diffrent exexutables to run shell scripts like ksh, bash, dash, csh so we have to tell the karnal to choose bash for execution.
+
+this should be in any of the ,sh file as first line even you try lacks of .sh files over internet.
+
+
 
 
 
