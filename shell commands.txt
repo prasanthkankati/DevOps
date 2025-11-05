@@ -2,13 +2,25 @@ shell scripting is the way of communicating to the Linux servers and most of the
 GUI adds weight so user interactions should go through CLI. Most of the shell commands across all the OS destributions
 CentOS, RedHat, Federo, Amazon, Ubuntu, debian vendors are same.
 
-command to logon to instance:
+history 
 
+shows evey command you ran
+
+
+
+---------------
+help on commands
+----------------
 
 man ls
 man touch 
 
 open the manual of the commands available and guide
+
+
+-------------
+command to logon to instance:
+-------------
 
 ssh -i path/to/the/pem/file/Pandu@123/pem ubuntu@publicIPV4
 
@@ -57,21 +69,27 @@ Creating file and write content in it:
 vi starboy
 
  to start editor
-escape to dismiss read or write confusion the write using I
+'escape' button to dismiss read or write confusion the write using I
 
 I
 
 inserts the content 
 
-:wq!
+:wq!    
 
 
-saves the file.
+saves the file and quits editor.
+:q 
+just quits the editor
 
+Print the file instead of opening in the editor and see whats inside evry time:
 
-Print the file:
+cat starboy.sh
 
-cat starboy
+shows the content inside starboy.sh
+ex
+#!/bin/bash
+echo "hello star"
 
 remove file:
 
@@ -136,11 +154,54 @@ shell scripting
 -------------
 
 #!/bin/bash
+#!/bin/dash
+#!/bin/sh
+
+dash is latest linking
+bash is older and sh is older than to bash. but mostly bash is widely used.
 
 
 in bin there are diffrent exexutables to run shell scripts like ksh, bash, dash, csh so we have to tell the karnal to choose bash for execution.
 
 this should be in any of the ,sh file as first line even you try lacks of .sh files over internet.
+
+
+-----------
+execute a.sh file
+--------------
+
+there are two ways of executing a file
+ls
+star.sh
+
+sh star.sh
+or
+./star.sh
+
+--------------
+permissions
+--------------
+
+Linux means secure. even you only created a file in file system it still asks for permissions who can read, write, execute
+
+Linux is numbering for file operations 
+
+Red-4
+write-2
+execute-1
+
+formula for full permissions is 4+2+1=7
+
+chmod 444 star.sh - provide read permssions to all you. your group, every user.
+chmod 222 star.sh - provide write permssions to all you. your group, every user.
+chmod 111 star.sh - provide xcute permssions to all you. your group, every user.
+
+chmod - change in permissions
+
+chmod 777 - 1st 7 permission for your self, 2nd 7 permission for your group, 3rd 7 permission for every user normal/root everyone who logged.
+
+
+
 
 
 
