@@ -219,6 +219,27 @@ cd ..
 #remove directory
 
 rm -rf star
+------------
+Node Health:
+------------
+#NO of CPU's
+nproc
+#memory info
+free
+free -eg
+#disk file info
+df
+df -h
+#all together processes, memregion, memory, threads, df, network, PID invidual process ran, memory, disk consumption percentages.
+top
+
+to list all the processes running
+ps
+ps -ef
+ps -ef | grep "amazon"
+
+
+
 
 
 
