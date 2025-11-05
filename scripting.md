@@ -56,9 +56,113 @@ if not used debug mode all the outputs gets mixed up.
 
 
 ---
+## Grepping
+
 pf -ef | grep "amazon"
 
 grepping from the list of processes amzon related processes are filtered out. piping takes the input from first command output and takes as input.
+---
+
+##AWKing
+
+pf -ef | grep "amazon" | awk -F ','{print$2}'
+
+prints pid present in the second column
+
+Alright, let’s keep it clean and clear 👇
+
+`awk` is a **powerful text-processing tool** in shell scripting. It’s mainly used to **search, filter, and format text or data** — especially useful when dealing with structured text like logs, CSVs, or command outputs.
+
+### 💡 Basic Idea
+
+Think of `awk` as a **mini programming language** built for handling text files line by line and splitting them into **fields (columns)**.
+
+---
+
+### ⚙️ How it Works
+
+* It reads input **line by line**.
+* Each line is **split into fields** using a **delimiter** (default: space).
+* You can perform **actions** on those fields using patterns or conditions.
+
+---
+
+### 🧱 Basic Syntax
+
+```bash
+awk 'pattern { action }' filename
+```
+
+or
+
+```bash
+command | awk 'pattern { action }'
+```
+
+---
+
+### 🔍 Examples
+
+**1️⃣ Print the first column of a file**
+
+```bash
+awk '{print $1}' file.txt
+```
+
+👉 `$1` = first field (column)
+👉 `$0` = whole line
+
+---
+
+**2️⃣ Print specific columns (like name and age)**
+
+```bash
+awk '{print $1, $3}' data.txt
+```
+
+Prints first and third columns separated by space.
+
+---
+
+**3️⃣ Print lines matching a condition**
+
+```bash
+awk '$3 > 50 {print $1, $3}' marks.txt
+```
+
+Prints name and marks of students scoring more than 50.
+
+---
+
+**4️⃣ Use a custom delimiter (like comma for CSV)**
+
+```bash
+awk -F',' '{print $2}' file.csv
+```
+
+`-F','` sets the field separator to comma.
+
+---
+
+**5️⃣ Count lines**
+
+```bash
+awk 'END {print NR}' file.txt
+```
+
+👉 `NR` = Number of Records (lines processed)
+
+---
+
+### 🚀 Why Use `awk`
+
+* Quick text extraction and transformation
+* No need for complex scripts
+* Combines well with other commands like `grep`, `sort`, and `sed`
+
+---
+
+
 
 
 
