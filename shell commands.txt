@@ -201,6 +201,29 @@ chmod - change in permissions
 chmod 777 - 1st 7 permission for your self, 2nd 7 permission for your group, 3rd 7 permission for every user normal/root everyone who logged.
 
 
+--------------------------
+Folder/Directory Operation:
+--------------------------
+#create a folder
+mkdir star
+
+#Enter into that directory
+cd star
+
+#check correct directory path
+pwd
+
+#go back
+cd ..
+
+#remove directory
+
+rm -rf star
+
+
+
+
+
 
 
 
