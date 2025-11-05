@@ -162,6 +162,13 @@ awk 'END {print NR}' file.txt
 
 ---
 
+## curling
+
+Curl command retrives the content in the URL
+
+curl www.azure.blob/app.log | grep "error"
+cat text.log | grep "error"
+
 
 
 
