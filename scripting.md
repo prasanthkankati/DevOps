@@ -170,9 +170,78 @@ curl www.azure.blob/app.log | grep "error"
 cat text.log | grep "error"
 
 
+curl -X GET url | grep "error" also works.
+
+
+Wget url
+also does the same thing but it first download the log into local then by doing cat downloaded.log | grep "error"
+
+so one step extra needs here to do.
+
+---
+## Find
+
+find / - pam
+
+finds the pam matched files in by seraching entire file system.
+logging as root user will fetch all the files if there is any permission issues with normal user running this command. cause root is and admin
+you can do anything / operatuion using the root user.
 
 
 
+--
+## sudo su -
+# `sudo` is - substitute user do  
+# `su` is switch user
+
+
+# sudo su - takes to root 
+
+# su sai
+# su star
+# su su -
+
+switchs users
+
+
+command `su` is used to switch between the diffrent users.
+command `sudo su -` is used to switch as root user.
+
+----
+## if else
+a=10
+b=20
+
+if [ $a -gt $b ]
+then
+  echo "a is big"
+else
+  echo "b is big"
+fi
+
+---
+Always add spaces around brackets [ ] — super important.
+
+For numbers, use -gt, -lt, -eq, etc.
+
+-gt → greater than
+
+-lt → less than
+
+-eq → equal to
+
+The then keyword must either be on a new line or after a semicolon (;).
+---
+
+## for
+
+for i in 1 2 3 4 5
+do
+  echo "Number: $i"
+done
+
+
+----
 
 
 
