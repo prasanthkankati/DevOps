@@ -1,0 +1,67 @@
+Terraform is iaC or APIaC tool.
+Depend on the manay factor like cost and fetaures organizations may migrate and switch back to the diffrent cloud providers.
+Terraform has the ability to to talk to the corresponding cloud providers targeted API using a configu files. so using the file modifications 
+managing / migrations are easy acros any cloud platfm.
+
+
+** Statefile: **- infra snapshot
+Aight Prasanth, here’s the quick, clean breakdown — straight to the point, but still chill.
+
+**A state file** is basically a *record keeper* for an automation or infra-as-code tool.
+Think of it like a diary where the system writes down:
+
+* what resources exist
+* their current settings
+* what it created earlier
+* what needs to change next time
+
+### In simple terms
+
+It’s a **snapshot of your infrastructure’s current reality** stored in a file.
+
+### Where you’ll see this?
+
+Mainly in tools like **Terraform**.
+
+### Why it's important?
+
+* Keeps track of resources already created
+* Helps avoid duplicate creation
+* Allows efficient “diff” to know what changed
+* Ensures safe updates or deletions
+
+### Example
+
+Terraform uses `terraform.tfstate`
+It stores:
+
+* VM IDs
+* Network configs
+* Resource dependencies
+* Actual values after deployment
+
+Without the state file, the tool is basically blind.
+
+If you wanna know how to manage, lock, or secure a state file, just say the word.
+
+
+
+we can collabrate the terraform files by keepinf in some version controll systems.
+we can do automate the infra using terraform.
+we can standardize the configuration beacuse for one CPF we have one procedure and for other CPF another procedure but we can standardize using terraform across all
+----------
+
+Process: init > Plan > Apply > destroy
+
+configue file to statefile
+
+1. Expect the infrastuture or requirement of infra
+2. Define/write configurations to the terraform configuration files
+3. It shows the output what happens 
+4. depending on th e provider it creates a state file which is the proof of defined configue.
+
+
+
+
+
+
