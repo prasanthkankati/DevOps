@@ -1,0 +1,381 @@
+
+scrum is a time boxed approach
+depends on the azile adoption template adoption and feasibility maturity of the team the time box will be defined. like 2-4 weeks ours is 3 weeks.
+the time box is nothing but sprint
+the goal of delivery is defined/selected/priorititzed in the sprint planning phase
+capacity phase estimate the story points with complexicity depends on the Fibanocci series 1 easy,3 average ,5 can be done with a bit complexes,8 complex,13 critical
+all the goals/features are defined in the backlog refinement phase
+
+
+in jira> backlog tab shows > all the backlog details like goal, time line, story points list under that particular that backlog 
+         Active sprints tab shows > all the story progress like a tracking and assignee details of the stories
+         Reports tab shows> burn up chart, burn down chart, velocity of sprint (commited issues and delivered issues).
+         by adding the confluence plugin > reports, docs, standups, retrospectives all can store there
+         so in the dialy standup (scrum master/lead or someone can condut today you and tomarrow collegue if matured enough): he mark the stories and get the updates 
+         peopel say i started this yesterday, working on this today it might get complted today by eod or tomarrow if no blockers. if blockers then he blocks the 
+         blocker to the story. so po may resolve.
+
+Mid-sprint review:  solution for complexes in the sprint 
+           sprint ususally has the dialy standups but with the time limmitatation to 30-40 minutes mostly. where we can not talk all the blockers and problems.
+           so for example usually a story has 3 points intially but after starting it was added more with 6-10 points and becomes a hard blockers in some points so 
+          this kind of issues will be discussed in mid sprint to achieve them.
+
+
+
+
+
+Product grooming -define goals and prioritize the goals
+Backlog Grooming
+Sprint daily standups
+Mid sprint review
+
+
+Make sure backlog items are clear, correct, and ready for future sprints.
+
+What happens in Backlog Refinement?
+Clarify user stories
+Add acceptance criteria
+Break large stories into smaller tasks
+Prioritize based on business value
+Estimate (Story Points)
+Remove outdated items---------
+
+
+
+------
+
+
+Below is the **MOST complete explanation** of Agile & Scrum **ceremonies**, **phases**, **technical terminology**, and **definitions** — written in a **real-time IT company model**, easy to understand and interview-ready.
+
+I added visual image groups to help you understand how these ceremonies look in real teams.
+
+---
+
+# 🧭 **AGILE DELIVERY – FULL PHASES + SCRUM CEREMONIES**
+
+
+# 🚀 **AGILE PHASES (END-to-END Delivery Flow)**
+
+## 1️⃣ **Requirement Phase**
+
+* Product Owner gathers inputs from clients/stakeholders
+* Creates **Product Backlog**
+* High-level features are called **Epics**
+* Epics → broken into **User Stories**
+
+---
+
+## 2️⃣ **Planning Phase**
+
+* Prioritization of backlog
+* Release planning (for months)
+* Sprint planning (for 2–3 weeks)
+
+---
+
+## 3️⃣ **Execution Phase**
+
+* Development
+* Testing
+* DevOps CI/CD
+* Code review
+* Deployment to QA/UAT
+
+---
+
+## 4️⃣ **Review Phase**
+
+* Demonstration to stakeholders
+* Acceptance of stories
+* Feedback captured
+
+---
+
+## 5️⃣ **Retrospective Phase**
+
+* Team identifies improvements
+* Action items planned for next sprint
+
+---
+
+## 6️⃣ **Release Phase**
+
+* Final testing
+* Production deployment
+* Monitoring and user feedback
+
+---
+
+# 🎯 **SCRUM CEREMONIES (Done Inside Each Sprint)**
+
+
+# 1️⃣ **BACKLOG REFINEMENT (Grooming)**
+
+🕒 When: Weekly
+👥 Who: Product Owner, Scrum Master, Dev, QA, DevOps
+🎯 Goal: Make future stories **clear, small, and ready**.
+
+### 🔍 What happens?
+
+* PO reads each story
+* Team asks questions
+* Add **Acceptance Criteria**
+* Split large stories (Epics → Stories → Tasks)
+* Estimate story points
+* Remove outdated items
+* Prioritize based on business value
+
+### Output:
+
+✔ Stories become **READY** state
+✔ Feature understanding is clarified
+
+---
+
+# 2️⃣ **SPRINT PLANNING**
+
+
+🕒 When: Day 1 of sprint
+👥 Who: PO, SM, Dev, QA, DevOps
+🎯 Goal: Decide **what work** the team will complete.
+
+### 🔍 Steps:
+
+1. PO presents prioritized stories
+2. Team checks **capacity**
+3. Break stories → **Technical Tasks**
+4. Estimate hours per task
+5. Set the **Sprint Goal**
+6. Commit stories for sprint
+
+### Output:
+
+✔ Sprint Backlog
+✔ Clear tasks for each team member
+
+---
+
+# 3️⃣ **DAILY STANDUP (Daily Scrum)**
+
+
+🕒 When: Daily, 15 min
+👥 Who: Entire Scrum team
+🎯 Goal: Sync progress + remove blockers.
+
+### 🔍 Format:
+
+Each member answers:
+
+1️⃣ **What did I do yesterday?**
+2️⃣ **What will I do today?**
+3️⃣ **Any blockers?**
+
+### DevOps Example:
+
+* “Yesterday: fixed CI pipeline failure.”
+* “Today: configure UAT environment.”
+* “Blocker: need firewall rule from infra team.”
+
+### Output:
+
+✔ Daily alignment
+✔ Early risk identification
+
+---
+
+# 4️⃣ **SPRINT EXECUTION**
+
+
+🎯 Goal: Build and test stories.
+
+### Activities:
+
+* Development
+* Testing
+* Code review
+* CI/CD execution
+* Monitoring
+* Bug fixing
+* Deployment to QA/UAT
+
+### Output:
+
+✔ Increment (working software)
+
+---
+
+# 5️⃣ **SPRINT REVIEW (DEMO)**
+
+🕒 When: Last day of sprint
+👥 Who: Team + stakeholders
+🎯 Goal: Demonstrate completed features.
+
+### 🔍 Steps:
+
+1. Developer demos feature
+2. QA confirms testing
+3. DevOps explains infra updates if needed
+4. Stakeholders give feedback
+5. PO accepts or rejects stories
+
+### Output:
+
+✔ Accepted work
+✔ Requirements for future sprints
+
+---
+
+# 6️⃣ **SPRINT RETROSPECTIVE**
+
+🕒 When: After review
+👥 Who: Scrum team only
+🎯 Goal: Improve team process.
+
+### 🔍 Format:
+
+* **What went well?**
+* **What didn’t go well?**
+* **What improvements next sprint?**
+
+### Output:
+
+✔ Continuous improvement
+✔ Action items for next sprint
+
+---
+
+# 7️⃣ **RELEASE / DEPLOYMENT (Outside Scrum ceremonies)**
+
+🕒 When: After multiple sprints (depends on company)
+👥 Who: DevOps, QA, Dev, PO
+🎯 Goal: Push new features to production.
+
+### 🔍 Steps:
+
+* Final testing
+* CI/CD build
+* Deployment
+* Smoke testing
+* Monitoring
+
+### Output:
+
+✔ Production release
+✔ Go-Live confirmation
+
+---
+
+# 🧩 **AGILE TECHNICAL TERMINOLOGY (With Clear Definitions)**
+
+## 📌 **Epic**
+
+Large feature broken into smaller stories.
+**Example:** “User Management System”
+
+---
+
+## 📌 **User Story**
+
+Small requirement written from user perspective.
+“As a user, I want to reset password so that I can access my account.”
+
+---
+
+## 📌 **Task / Subtask**
+
+Development or technical work needed to complete a story.
+**Example:** “Create API for reset password”
+
+---
+
+## 📌 **Acceptance Criteria**
+
+Conditions to confirm story is done.
+**Example:** “OTP must expire in 5 minutes.”
+
+---
+
+## 📌 **Story Points**
+
+Complexity measurement (not time).
+Used for planning velocity.
+
+---
+
+## 📌 **Definition of Ready (DoR)**
+
+Checklist before story enters a sprint.
+✔ Acceptance criteria
+✔ Estimated
+✔ Clear requirement
+✔ Dependencies resolved
+
+---
+
+## 📌 **Definition of Done (DoD)**
+
+Checklist before story is considered completed.
+✔ Code complete
+✔ Code reviewed
+✔ Unit tested
+✔ Deployed to QA
+✔ No open defects
+
+---
+
+## 📌 **Sprint Goal**
+
+Commitment/mission of the sprint.
+**Example:** “Enable users to recover password via email.”
+
+---
+
+## 📌 **Increment**
+
+Working software produced at end of sprint.
+
+---
+
+## 📌 **Velocity**
+
+Number of story points completed by team each sprint.
+
+---
+
+## 📌 **Burndown Chart**
+
+Graph showing remaining work in sprint.
+
+---
+
+## 📌 **Impediment / Blocker**
+
+Anything stopping progress.
+**Example:** “QA environment down.”
+
+---
+
+## 📌 **Scrum Roles**
+
+| Role              | Responsibility            |
+| ----------------- | ------------------------- |
+| **Product Owner** | Requirement owner         |
+| **Scrum Master**  | Process facilitator       |
+| **Developer**     | Build functionality       |
+| **QA**            | Test functionality        |
+| **DevOps**        | CI/CD, infra, deployments |
+
+---
+
+# 🧠 **READY-TO-USE REALTIME MODEL (Interview Friendly)**
+
+Here is the entire Agile cycle in one flow:
+
+1. **Product Owner creates backlog**
+2. **Backlog Refinement** clarifies user stories
+3. **Sprint Planning** selects stories
+4. **Daily Standup** tracks progress
+5. **Sprint Execution** (Dev + QA + DevOps work)
+6. **Sprint Review** demos finished work
+7. **Retrospective** identifies improvements
+8. **Release** moves software to production
