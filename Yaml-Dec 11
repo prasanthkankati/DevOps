@@ -1,0 +1,248 @@
+Yamal ain't a Markup language and it is a data serialization language.
+Alright bet — here’s a clean, easy-to-digest YAML cheat-sheet that covers everything you actually need from the official spec, minus the boring stuff. Straight to the point.
+
+---
+
+# 🚀 YAML Cheat-Sheet (Beginner → Pro)
+
+**Plain English. Zero confusion.**
+
+---
+
+# 1️⃣ What YAML actually is
+
+* A **human-friendly data format**.
+* Used mostly for **configs**, **DevOps**, **K8s**, **CI/CD**, and **API data**.
+* Supports only 3 data types:
+
+  * **Scalars** → simple values (strings, numbers, booleans)
+  * **Sequences** → lists
+  * **Mappings** → key-value pairs (dictionary / object)
+
+---
+
+# 2️⃣ Basic Rules (the stuff people forget)
+
+### ✔ Indentation = structure
+
+Use **spaces only** (2 or 4). No tabs.
+
+```yaml
+user:
+  name: Prasanth
+  age: 27
+```
+
+### ✔ Key-value syntax
+
+```yaml
+key: value
+```
+
+### ✔ Lists (sequences)
+
+```yaml
+skills:
+  - testing
+  - jmeter
+  - groovy
+```
+
+### ✔ Comments
+
+```yaml
+# this is a comment
+```
+
+---
+
+# 3️⃣ Data Types (scalars)
+
+### ✔ Strings
+
+No quotes needed unless special characters.
+
+```yaml
+name: Prasanth
+```
+
+Quotes:
+
+```yaml
+msg: "Hello world"
+path: '/home/user'
+```
+
+### ✔ Numbers
+
+```yaml
+age: 27
+pi: 3.14
+```
+
+### ✔ Booleans
+
+```yaml
+isActive: true
+isValid: false
+```
+
+### ✔ Null
+
+```yaml
+value: null
+```
+
+### ✔ Multi-line strings
+
+**Block literal (keeps newlines):**
+
+```yaml
+desc: |
+  This is line 1
+  This is line 2
+```
+
+**Folded (joins lines into one):**
+
+```yaml
+desc: >
+  This becomes a single
+  continuous line.
+```
+
+---
+
+# 4️⃣ Lists (sequences)
+
+### ✔ Basic
+
+```yaml
+items:
+  - red
+  - blue
+  - green
+```
+
+### ✔ List of objects
+
+```yaml
+users:
+  - name: Aadi
+    age: 20
+  - name: Sam
+    age: 25
+```
+
+---
+
+# 5️⃣ Mappings (objects)
+
+### ✔ Simple
+
+```yaml
+server:
+  host: localhost
+  port: 8080
+```
+
+### ✔ Nested
+
+```yaml
+database:
+  auth:
+    user: admin
+    pass: secret
+```
+
+---
+
+# 6️⃣ YAML Multiple Documents in One File
+
+(Used in Kubernetes a lot.)
+
+```yaml
+---
+apiVersion: v1
+kind: Pod
+---
+apiVersion: v1
+kind: Service
+```
+
+`---` separates documents.
+
+---
+
+# 7️⃣ Anchors & Aliases (Advanced but powerful)
+
+Reuse values.
+
+```yaml
+default: &myDefaults
+  retries: 3
+  timeout: 10
+
+service:
+  <<: *myDefaults
+  timeout: 30   # override
+```
+
+* `&` creates reusable block
+* `*` references it
+* `<<:` merges it
+
+---
+
+# 8️⃣ Custom Tags (rare but official spec)
+
+```yaml
+date: !!timestamp 2025-12-11
+id: !!int "42"
+```
+
+Used mainly in advanced parsing.
+
+---
+
+# 9️⃣ Best Practices
+
+* Stick to **2-space indentation**.
+* Don’t mix tabs & spaces (YAML will scream).
+* Avoid anchors/aliases unless needed.
+* Always use `.yaml` or `.yml` extension.
+* Keep keys lowercase with hyphens:
+
+```yaml
+app-name: dialer-service
+```
+
+---
+
+# 🔟 Full Reference Summary (Spec → Simple English)
+
+| Spec Concept | Simple Meaning                                                 |
+| ------------ | -------------------------------------------------------------- |
+| Stream       | A file or data input that may contain multiple YAML documents. |
+| Document     | One YAML "block" starting from top to `---` separator.         |
+| Node         | Any piece of data (scalar, list, or map).                      |
+| Scalar       | Single value (string, number, bool).                           |
+| Sequence     | Ordered list (`- item`).                                       |
+| Mapping      | Key-value pairs.                                               |
+| Tag          | Type hint for meaning (`!!int`, `!!str`).                      |
+| Anchor       | Save a block for reuse.                                        |
+| Alias        | Reuse that saved block.                                        |
+| Schema       | Rules for what type values should be parsed into.              |
+
+---
+
+# 🧪 Want real practice?
+
+I can give you:
+
+* mini exercises
+* YAML config tasks
+* DevOps-style YAML (K8s, CI/CD)
+* Testing-related YAML (Postman, JMeter properties, etc.)
+
+Just tell me what vibe you want.
