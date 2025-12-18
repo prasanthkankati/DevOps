@@ -1,0 +1,137 @@
+Alright, quick and clean rundown 👇
+Here’s **Kubernetes (K8s) — intro + components**, no fluff.
+
+---
+
+## Kubernetes (K8s) – Intro
+
+Kubernetes is a **container orchestration platform**.
+In simple terms: it **runs, manages, scales, and heals containerized apps automatically**.
+
+Why people use it:
+
+* Auto-scaling apps 📈
+* Self-healing (restarts failed containers)
+* Load balancing
+* Zero/low downtime deployments
+* Works great with Docker
+
+Think of it as the **OS for your container infrastructure**.
+
+---
+
+## Kubernetes Architecture (High Level)
+
+Kubernetes has **two main parts**:
+
+1. **Control Plane (Master)**
+2. **Worker Nodes**
+
+---
+
+## 1️⃣ Control Plane Components (Brain of K8s)
+
+### 1. API Server
+
+* Entry point to Kubernetes
+* All commands go through this (`kubectl`, UI, CI/CD)
+* Validates and processes requests
+
+👉 *Gatekeeper of the cluster*
+
+---
+
+### 2. Scheduler
+
+* Decides **which node** a Pod should run on
+* Considers CPU, memory, constraints, affinity
+
+👉 *Smart placement engine*
+
+---
+
+### 3. Controller Manager
+
+* Runs controllers (Node, ReplicaSet, Deployment, etc.)
+* Ensures **desired state = actual state**
+
+Example:
+
+* If 3 Pods needed and 1 dies → creates a new one
+
+👉 *Auto-correct system*
+
+---
+
+### 4. etcd
+
+* Distributed **key-value database**
+* Stores cluster state, configs, secrets
+
+👉 *Single source of truth*
+
+---
+
+## 2️⃣ Worker Node Components (Where apps run)
+
+### 5. Kubelet
+
+* Agent running on each node
+* Talks to API Server
+* Ensures containers in Pods are running
+
+👉 *Node supervisor*
+
+---
+
+### 6. Container Runtime
+
+* Runs containers
+* Examples: Docker, containerd, CRI-O
+
+👉 *Actual container engine*
+
+---
+
+### 7. Kube-Proxy
+
+* Handles networking & load balancing
+* Routes traffic to correct Pods
+
+👉 *Traffic controller*
+
+---
+
+## Core Kubernetes Objects (Very Important)
+
+### 8. Pod
+
+* Smallest deployable unit
+* One or more containers inside
+* Shared network & storage
+
+👉 *Container wrapper*
+
+---
+
+## Bonus (Common Add-ons)
+
+* **CoreDNS** – service discovery
+* **Ingress Controller** – HTTP/HTTPS routing
+* **Metrics Server** – resource metrics
+
+---
+
+## One-line Summary
+
+> Kubernetes automatically manages containers so your app stays **available, scalable, and resilient** without manual effort.
+
+
+Deployment
+   ↓
+ReplicaSet
+   ↓
+Pods (n replicas)
+   ↑
+Service (load balances traffic)
+
