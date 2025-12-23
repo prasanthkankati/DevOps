@@ -30,6 +30,8 @@ Think of it as:
 
 #### 1. **ClusterIP** (default)
 
+nobody can not access the services as it is clustyer level only the network access inside the cluster level only access.
+
 * Internal-only access
 * Used for **service-to-service communication**
 * Example: backend API, database
@@ -40,6 +42,8 @@ App → Service → Pods
 
 #### 2. **NodePort**
 
+who has acces sto the Ec2 or VPC or Node they can only access
+
 * Exposes service on `<NodeIP>:<Port>`
 * Basic external access (not production-friendly alone)
 
@@ -47,7 +51,7 @@ App → Service → Pods
 User → NodeIP:30080 → Service → Pods
 ```
 
-#### 3. **LoadBalancer**
+#### 3. **LoadBalancer** anyone in the world can access.
 
 * Cloud-native external access
 * Creates an external LB (AWS ALB, Azure LB, GCP LB)
