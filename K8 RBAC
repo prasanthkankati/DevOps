@@ -1,0 +1,65 @@
+K8 RBAC
+
+RBAC (Role-Based Access Control) is a core component of Kubernetes security. Properly configuring RBAC 
+helps protect your service accounts, users, and Kubernetes resources (such as Deployments, Services,
+Ingresses, ConfigMaps, and Secrets) from unauthorized access.
+
+
+k8 offloads the user management to identity access management services like okta, IAM, key-clock.
+RBAC provides a structured way to authorize access to resources. By assigning specific permissions 
+to users, ServiceAccounts, or groups, RBAC ensures that only authorized entities can perform defined
+actions on resources. For example, you can allow a ServiceAccount to create Pods within a particular
+namespace (like the Sock Shop namespace) or let specific users fetch and create resources based on their roles.
+
+RBAC can be defined at two levels:
+
+Namespace Level: Controls access within a single namespace.
+Cluster Level: Grants permissions across all namespaces.
+
+A role created within a namespace confines its permissions to that namespace, whereas a cluster role provides access control across all namespaces.
+It is important to distinguish between roles and cluster roles. A role limits permissions to a specific namespace, whereas a cluster role does not.
+
+Security Warning
+
+If RBAC is not configured correctly, your Kubernetes cluster and all its resources might be exposed to potential security breaches. Always implement RBAC with careful planning.
+
+
+Components of RBAC
+1. Roles
+2. Cluster Roles
+3. Role Bindings
+4. Cluster Role Bindings
+
+
+1. Roles
+Roles define the permitted actions for users, ServiceAccounts, or groups within a specific namespace.
+For example, one role may allow a user to create Pods in the Sock Shop namespace, while another role might restrict access to read-only permissions.
+
+2. Cluster Roles
+A cluster role provides permissions that span the entire cluster. When you see the prefix "cluster" (as in "cluster role" or "cluster role binding"), 
+it indicates that the permissions apply globally across all namespaces.
+
+3. Role Bindings
+Role bindings attach a role to a user, ServiceAccount, or group within a specific namespace. 
+This ensures that the defined permissions apply only to that namespace.
+
+4. Cluster Role Bindings
+Cluster role bindings attach a cluster role to a user, ServiceAccount, or group at the cluster level, 
+thereby extending the permissions across all namespaces.
+
+In essence, role bindings narrow permissions to a namespace, while cluster role bindings grant the same permissions cluster-wide.
+
+Conclusion
+By correctly configuring these RBAC components, you ensure that users and services have access only to the resources and operations they require. 
+In the upcoming demonstration, we will walk through practical code examples to illustrate how to set up these RBAC policies effectively.
+
+by default k8 create a service account and use it as a default service account.
+prerequisits
+user/service accpunt/ groups
+role
+role binding 
+
+
+without this we cant create permissions
+like openshift and k8 dashboard we will see really what happening  
+
